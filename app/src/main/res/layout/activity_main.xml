@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.administrator.newpagertab.view.PagerSlidingTabStrip
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/location_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsTabPaddingLeftRight="13dp"
+        app:pstsScaleZoomMax="0"
+        app:pstsIndicatorColor="@color/location_text_color"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsShouldExpand="false"
+        app:pstsTextSelectedColor="@color/location_text_color"
+        app:pstsUnderlineColor="@color/divider_color"
+        app:pstsUnderlineHeight="1dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/location_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_tabs"/>
+</RelativeLayout>
